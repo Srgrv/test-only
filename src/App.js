@@ -13,6 +13,19 @@ function App() {
         <span className="text-[#3877EE]">2014</span>
         <span className="text-[#EF5DA8]">2022</span>
       </div>
+      <div className="mt-[137px]">
+        <div className="font-normal text-[14px] leading-[18.12px] text-[#42567A]">
+          06/06
+        </div>
+        <div className="flex mt-[20px] gap-5 ">
+          <button>
+            <img src="./Group 3277.png" alt="back" />
+          </button>
+          <button>
+            <img src="./Group 3276.png" alt="forward" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
