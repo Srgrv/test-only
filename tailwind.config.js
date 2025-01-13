@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["PT Sans", "sans-serif"], // Здесь указываем шрифт PT Sans
+        sans: ["PT Sans", "sans-serif"],
+        bebas: ['"Bebas Neue"', "sans-serif"],
       },
       backgroundImage: {
         gradient: "linear-gradient(to bottom, #3877EE, #EF5DA8)",
