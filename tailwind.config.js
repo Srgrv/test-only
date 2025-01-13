@@ -29,7 +29,7 @@ module.exports = {
         ".before-gradient": {
           content: "",
           position: "absolute",
-          top: "7px",
+          top: "177px",
           left: "0px",
           width: "5px",
           height: "120px",

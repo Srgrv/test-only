@@ -1,37 +1,37 @@
 import "./App.css";
 
-const data = [
-  {
-    id: 1,
-    year: 2015,
-    description:
-      "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
-  },
-  {
-    id: 2,
-    year: 2016,
-    description:
-      "Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11",
-  },
-  {
-    id: 3,
-    year: 2017,
-    description:
-      "Компания Tesla официально представила первый в мире электрический грузовик Tesla Semi",
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     year: 2015,
+//     description:
+//       "13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды",
+//   },
+//   {
+//     id: 2,
+//     year: 2016,
+//     description:
+//       "Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11",
+//   },
+//   {
+//     id: 3,
+//     year: 2017,
+//     description:
+//       "Компания Tesla официально представила первый в мире электрический грузовик Tesla Semi",
+//   },
+// ];
 
 function App() {
   return (
-    <div className="container w-max-[1440px] ml-[320px]">
-      <div className="mt-[170px] flex text-[56px]  items-center relative">
+    <div className=" w-[1440px] ml-[320px] h-[1080px]">
+      <div className="pt-[170px] flex text-[56px]  items-center relative">
         <div className="before-gradient"></div>
         <h1 className=" text-[#42567A] leading-[67.2px] font-sans w-[353px] h-[134px]  pl-[83px]">
           Исторические даты
         </h1>
       </div>
       <div className=" mt-[96px] ml-[217px] mr-[250px] w-[973px] h-[160px] text-[200px] flex justify-between leading-[160px] font-sans">
-        <span className="text-[#3877EE]">2014</span>
+        <span className="text-[#3877EE]">2015</span>
         <span className="text-[#EF5DA8]">2022</span>
       </div>
       <div className="mt-[137px]">
@@ -47,7 +47,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="flex mt-[50px] h-[135px] gap-[80px]">
+      <div className="flex mt-[50px] h-[135px] gap-[80px] m-full">
         {/* {data.map((item) => {
           return (
             <div>
@@ -83,6 +83,17 @@ function App() {
             грузовик Tesla Semi
           </p>
         </div>
+      </div>
+      <div className="absolute top-[215px] left-[772px] w-[536px] h-[530px]">
+        <img src="./Mask Group.png" alt="mase" />
+        <img
+          src="./Group 2345.png"
+          alt="six"
+          className="absolute top-0 left-[348px]"
+        />
+        <p className="absolute top-[13px] left-[371px] text-[20px] leading-[30px] text-[#42567A]">
+          6
+        </p>
       </div>
     </div>
   );
