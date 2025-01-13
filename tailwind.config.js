@@ -2,7 +2,39 @@
 module.exports = {
   content: ["./src/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["PT Sans", "sans-serif"], // Здесь указываем шрифт PT Sans
+      },
+      backgroundImage: {
+        gradient: "linear-gradient(to bottom, #3877EE, #EF5DA8)",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".gradient-left-border": {
+          pl: "78px", // p-5
+          "border-left-width": "5px", // border-l-4
+          "border-left-color": "transparent",
+          "border-image": "linear-gradient(to bottom, #3877EE, #EF5DA8)",
+          "border-image-slice": "1",
+        },
+      });
+    },
+    function ({ addUtilities }) {
+      addUtilities({
+        ".before-gradient": {
+          content: "",
+          position: "absolute",
+          top: "7px",
+          left: "0px",
+          width: "5px",
+          height: "120px",
+          background: "linear-gradient(to bottom, #3877EE, #EF5DA8)",
+        },
+      });
+    },
+  ],
 };
